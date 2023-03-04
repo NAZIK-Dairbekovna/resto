@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import {CiSearch} from "react-icons/ci";
-import {HiOutlineShoppingCart} from "react-icons/hi";
+import {BsCart3} from "react-icons/bs";
 
 const Header = () => {
     return (
@@ -13,12 +13,12 @@ const Header = () => {
                             className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">UI.desk</span>
                     </a>
                     <div className="flex justify-around md:order-2">
-                        <div className='flex justify-center mr-8'>
-                            <CiSearch className='ml-4'/>
-                            <HiOutlineShoppingCart/>
+                        <div className='flex items-center mr-8'>
+                            <CiSearch className='mr-4 accent-gray-900' fontSize={20}/>
+                            <BsCart3 className='text-gray-900' fontSize={20}/>
                         </div>
                         <button type="button"
-                                className="text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-700 font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-gray-500 dark:hover:bg-gray-500 dark:focus:ring-gray-400">Order Now
+                                className="text-white bg-gray-900 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-800 font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-gray-700 dark:hover:bg-gray-500 dark:focus:ring-gray-400">Order Now
                         </button>
                         <button data-collapse-toggle="navbar-cta" type="button"
                                 className="inline-flex items-center p-2 text-sm text-gray-500 px-8 md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
